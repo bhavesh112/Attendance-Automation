@@ -31,7 +31,7 @@ const main = async (withHome, alreadyInitialized, schedule) => {
     date.getDay() === 0 ||
     (date.getDay() === 6 && Math.floor((date.getDate() - 1) / 7) % 2)
   ) {
-    // app.quit();
+    app.quit();
   }
   if (store.get("username") && store.get("password") && schedule) {
     const window = new BrowserWindow();
